@@ -15,8 +15,8 @@
       ],
       "blender_version_min": "4.2.0",
       "archive_url": "./mw_cs2_window_distributor-2.7.3.zip",
-      "archive_size": 17624,
-      "archive_hash": "sha256:4190fdcbf82925ddab5af9273e5869f12d181d757b2b1aea2aa898c36ea2cd39"
+      "archive_size": 10559,
+      "archive_hash": "sha256:ecdf61459ea667c85b141218a2365291157a9fa66dcc44a6a960e975355af7d2"
     },
     {
       "schema_version": "1.0.0",
