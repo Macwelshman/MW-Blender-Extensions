@@ -1,0 +1,22 @@
+{
+  "version": "v1",
+  "blocklist": [],
+  "data": [
+    {
+      "schema_version": "1.0.0",
+      "id": "mw_pbr_material",
+      "name": "MW PBR Material",
+      "tagline": "Detect texture sets and build clean PBR materials",
+      "version": "0.6.3",
+      "type": "add-on",
+      "maintainer": "MacWelshman",
+      "license": [
+        "SPDX:GPL-3.0-or-later"
+      ],
+      "blender_version_min": "5.0.0",
+      "archive_url": "./mw_pbr_material-0.6.3.zip",
+      "archive_size": 16665,
+      "archive_hash": "sha256:33d7419be517e89341a7cfb25f01106c5fd6515076af3938494445458ee7c4c3"
+    }
+  ]
+}
