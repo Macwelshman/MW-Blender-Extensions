@@ -21,7 +21,7 @@ In Blender 5.2:
 
 ## Published extensions
 
-- MW PBR Material 0.6.3
+- MW PBR Material 0.6.4
 
 Package metadata, compatibility, and licensing are declared in each extension's
 `blender_manifest.toml`.
