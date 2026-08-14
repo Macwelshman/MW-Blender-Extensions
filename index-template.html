@@ -11,6 +11,8 @@
       margin: 0 auto;
       padding: 2rem;
       font: 16px/1.5 system-ui, sans-serif;
+      color: #e8e8e8;
+      background: #151515;
     }
     h1 { margin-bottom: 0.35rem; }
     .instructions {
@@ -20,6 +22,45 @@
       border-radius: 0.6rem;
       background: #8881;
     }
+    .extension-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .extension-card {
+      display: flex;
+      min-height: 190px;
+      padding: 1.25rem;
+      border: 2px solid #686868;
+      border-radius: 0.8rem;
+      color: inherit;
+      background: #242424;
+      text-decoration: none;
+      cursor: grab;
+      transition: border-color 120ms, background 120ms, transform 120ms;
+    }
+    .extension-card:hover {
+      border-color: #e87d0d;
+      background: #2c2c2c;
+      transform: translateY(-2px);
+    }
+    .extension-card:active { cursor: grabbing; }
+    .card-content { display: flex; flex: 1; flex-direction: column; }
+    .card-title { margin: 0; font-size: 1.2rem; }
+    .card-description { flex: 1; margin: 0.6rem 0 1rem; color: #c8c8c8; }
+    .card-meta { margin: 0; color: #aaa; font-size: 0.88rem; }
+    .drag-label {
+      display: block;
+      margin-top: 1rem;
+      padding: 0.65rem 0.8rem;
+      border-radius: 0.45rem;
+      color: #fff;
+      background: #e46f00;
+      text-align: center;
+      font-weight: 750;
+    }
+    .generated-listing-hidden { display: none; }
     table { width: 100%; border-collapse: collapse; }
     th, td { padding: 0.65rem; border-bottom: 1px solid #8885; text-align: left; }
     a { font-weight: 650; }
@@ -35,7 +76,7 @@
     <h2>Drag and drop installation</h2>
     <ol>
       <li>Open Blender and leave this page visible beside it.</li>
-      <li>Drag the linked package ID in the table below into the Blender window.</li>
+      <li>Drag the orange area on an extension card below into the Blender window.</li>
       <li>Confirm Blender's installation prompt.</li>
     </ol>
     <p>The link installs the extension and adds the MW repository for future updates.</p>
@@ -43,6 +84,55 @@
   </section>
 
   ${body}
+
+  <script>
+    const table = document.querySelector("table");
+    if (table) {
+      const cards = document.createElement("section");
+      cards.className = "extension-grid";
+      cards.setAttribute("aria-label", "Available extensions");
+
+      for (const row of table.querySelectorAll("tr:not(:first-child)")) {
+        const cells = row.querySelectorAll("td");
+        const packageLink = cells[0]?.querySelector("a");
+        if (!packageLink || cells.length < 8) continue;
+
+        const card = document.createElement("a");
+        card.className = "extension-card";
+        card.href = packageLink.href;
+        card.draggable = true;
+        card.title = `Drag $${cells[1].textContent.trim()} into Blender`;
+
+        const content = document.createElement("span");
+        content.className = "card-content";
+
+        const title = document.createElement("strong");
+        title.className = "card-title";
+        title.textContent = cells[1].textContent.trim();
+
+        const description = document.createElement("span");
+        description.className = "card-description";
+        description.textContent = cells[2].textContent.trim();
+
+        const meta = document.createElement("span");
+        meta.className = "card-meta";
+        meta.textContent = `$${packageLink.textContent.trim()} · Blender $${cells[4].textContent.trim()} · $${cells[7].textContent.trim()}`;
+
+        const dragLabel = document.createElement("span");
+        dragLabel.className = "drag-label";
+        dragLabel.textContent = "☰  DRAG INTO BLENDER";
+
+        content.append(title, description, meta, dragLabel);
+        card.append(content);
+        cards.append(card);
+      }
+
+      table.before(cards);
+      table.previousElementSibling?.matches("hr") && table.previousElementSibling.classList.add("generated-listing-hidden");
+      table.previousElementSibling?.previousElementSibling?.matches("p") && table.previousElementSibling.previousElementSibling.classList.add("generated-listing-hidden");
+      table.classList.add("generated-listing-hidden");
+    }
+  </script>
 
   <footer>Repository listing generated ${date} UTC.</footer>
 </body>
