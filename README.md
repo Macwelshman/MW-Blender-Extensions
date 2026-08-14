@@ -21,7 +21,7 @@ In Blender 5.2:
 
 ## Published extensions
 
-- [MW PBR Material](https://github.com/Macwelshman/MW-PBR-Material) 0.6.4
+- [MW PBR Material](https://github.com/Macwelshman/MW-PBR-Material) 0.6.5
 
 Package metadata, compatibility, and licensing are declared in each extension's
 `blender_manifest.toml`.
