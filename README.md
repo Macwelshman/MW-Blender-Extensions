@@ -8,6 +8,19 @@ published here for installation and updates through Blender.
 
 ## Add this repository to Blender
 
+### Drag and drop
+
+1. Open the [MW Blender Extensions installation page](https://macwelshman.github.io/MW-Blender-Extensions/).
+2. Keep Blender open beside the web browser.
+3. Drag the linked package ID for the extension you want from the page into Blender.
+4. Confirm Blender's installation prompt.
+
+The download link includes the MW repository address, so Blender adds the
+repository while installing the extension. Future releases then appear through
+**Check for Updates**.
+
+### Add manually
+
 In Blender 5.2:
 
 1. Open **Edit > Preferences > Get Extensions**.
