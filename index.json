@@ -23,7 +23,7 @@
       "id": "mw_cs2_batch_exporter",
       "name": "MW CS2 Batch Exporter",
       "tagline": "Export selected meshes as individual CS2-ready FBX files",
-      "version": "0.1.24",
+      "version": "0.1.25",
       "type": "add-on",
       "maintainer": "MW",
       "license": [
@@ -33,9 +33,9 @@
       "permissions": {
         "files": "Export individual FBX files to the folder selected by the user"
       },
-      "archive_url": "./mw_cs2_batch_exporter-0.1.24.zip",
-      "archive_size": 11907,
-      "archive_hash": "sha256:0a0e2411240369304f476f78fd401d4f411583d4e2828ba1da982917abdeec1f"
+      "archive_url": "./mw_cs2_batch_exporter-0.1.25.zip",
+      "archive_size": 11992,
+      "archive_hash": "sha256:e6f95e6077d89d6a65fa7a3e39ed9706b271a646b7b7bb0ea1a14211037def35"
     },
     {
       "schema_version": "1.0.0",
