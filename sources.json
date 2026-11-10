@@ -1,0 +1,26 @@
+{
+  "mw_cs2_batch_exporter": {
+    "repo": "Macwelshman/MW-CS2-Batch-Exporter",
+    "asset": "mw_cs2_batch_exporter-{version}.zip",
+    "version": "0.1.26",
+    "sha256": "7ccef9f49b2ea8b1500ffba4a7381b54f81db3b0a2f74973ceddd152ff22b803"
+  },
+  "mw_cs2_pbr_material": {
+    "repo": "Macwelshman/MW-CS2-PBR-Material",
+    "asset": "mw_cs2_pbr_material-{version}.zip",
+    "version": "2.6.14",
+    "sha256": "ae32472d58bec62c95a4b3cc116c7c3b178d01c8b785b25ecefedc7d07c67ebf"
+  },
+  "mw_cs2_window_distributor": {
+    "repo": "Macwelshman/MW_CS2_Window_Distributor",
+    "asset": "mw_cs2_window_distributor-{version}.zip",
+    "version": "2.7.6",
+    "sha256": "282b7fe7b1e8fba542d896ddff3ca597123ab5049c707d342bd18dfdd8ae8500"
+  },
+  "mw_pbr_material": {
+    "repo": "Macwelshman/MW-PBR-Material",
+    "asset": "MW_PBR_Material_v{version}.zip",
+    "version": "0.6.5",
+    "sha256": "1984711741063ba4953a2b138f4a4845d874d496d876119efeca9f48f10b063f"
+  }
+}

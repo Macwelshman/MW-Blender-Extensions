@@ -1,0 +1,31 @@
+name: Validate extension feed
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 7 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -v
+      - name: Fetch and verify Blender's standalone manifest validator
+        run: |
+          curl --fail --silent --show-error --location --retry 3 \
+            https://raw.githubusercontent.com/blender/blender/8cb6b388974a817afedf1317ce26f0c75aa5f181/scripts/addons_core/bl_pkg/cli/blender_ext.py \
+            --output "$RUNNER_TEMP/blender_ext.py"
+          echo "4bca8e8c192969cd0411fc532c7aba502744bb01b6a780167749327f64d50b04  $RUNNER_TEMP/blender_ext.py" | sha256sum --check
+      - run: python scripts/feed.py --blender-cli "$RUNNER_TEMP/blender_ext.py" validate
+      - name: Compare against latest stable source releases
+        run: python scripts/feed.py audit
+        env:
+          GH_TOKEN: ${{ github.token }}
