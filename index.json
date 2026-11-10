@@ -58,19 +58,26 @@
       "id": "mw_cs2_pbr_material",
       "name": "MW CS2 PBR Material",
       "tagline": "Create clean, material-specific CS2 authoring shaders",
-      "version": "2.6.14",
+      "version": "2.6.15",
       "type": "add-on",
       "maintainer": "Macwelshman",
       "license": [
         "SPDX:GPL-3.0-or-later"
       ],
       "blender_version_min": "5.0.0",
+      "website": "https://github.com/Macwelshman/MW-Blender-Extensions",
       "permissions": {
         "files": "Load source texture images and export CS2-ready PNG texture sets"
       },
-      "archive_url": "./mw_cs2_pbr_material-2.6.14.zip",
-      "archive_size": 30061,
-      "archive_hash": "sha256:ae32472d58bec62c95a4b3cc116c7c3b178d01c8b785b25ecefedc7d07c67ebf"
+      "tags": [
+        "Material",
+        "Texturing",
+        "PBR",
+        "Cities Skylines"
+      ],
+      "archive_url": "./mw_cs2_pbr_material-2.6.15.zip",
+      "archive_size": 32757,
+      "archive_hash": "sha256:e32c44cbbc7b5b3d4e24cfcd052cac980e79798e802220c9b8ab5994764d7174"
     }
   ]
 }
