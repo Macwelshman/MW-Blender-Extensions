@@ -13,8 +13,8 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - run: python -m unittest discover -s tests -v
@@ -25,6 +25,14 @@ jobs:
             --output "$RUNNER_TEMP/blender_ext.py"
           echo "4bca8e8c192969cd0411fc532c7aba502744bb01b6a780167749327f64d50b04  $RUNNER_TEMP/blender_ext.py" | sha256sum --check
       - run: python scripts/feed.py --blender-cli "$RUNNER_TEMP/blender_ext.py" validate
+  audit:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
       - name: Compare against latest stable source releases
         run: python scripts/feed.py audit
         env:

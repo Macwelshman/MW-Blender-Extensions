@@ -37,7 +37,8 @@ artifact. Keep existing extension IDs and the public repository URL stable.
    ```
 
    CI runs the fixture tests and Blender manifest validator on pushes and
-   pull requests, and checks for upstream drift daily. It has read-only
+   pull requests, and checks for upstream drift daily and on manual dispatch. Upstream drift
+   fails the audit job without failing push or pull request validation. It has read-only
    permissions. Neither CI nor the staging tool publishes or pushes.
 4. Before approval, smoke-test the upgrade in a disposable Blender profile.
    For Batch Exporter 0.1.26, copy the baseline index and ZIPs from feed commit
