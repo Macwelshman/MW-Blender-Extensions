@@ -2,8 +2,8 @@
   "mw_cs2_batch_exporter": {
     "repo": "Macwelshman/MW-CS2-Batch-Exporter",
     "asset": "mw_cs2_batch_exporter-{version}.zip",
-    "version": "0.1.26",
-    "sha256": "7ccef9f49b2ea8b1500ffba4a7381b54f81db3b0a2f74973ceddd152ff22b803"
+    "version": "0.1.27",
+    "sha256": "ea83e71960b4acbe9ac28a516ded6263a0f2f574505d17c5dd583f5467d4d413"
   },
   "mw_cs2_pbr_material": {
     "repo": "Macwelshman/MW-CS2-PBR-Material",
