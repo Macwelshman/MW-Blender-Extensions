@@ -37,7 +37,7 @@ In Blender 5.2:
 - [MW PBR Material](https://github.com/Macwelshman/MW-PBR-Material) 0.6.6
 - [MW CS2 PBR Material](https://github.com/Macwelshman/MW-CS2-PBR-Material) 2.6.16
 - [MW CS2 Batch Exporter](https://github.com/Macwelshman/MW-CS2-Batch-Exporter) 0.1.27
-- [MW CS2 Window Distributor](https://github.com/Macwelshman/MW_CS2_Window_Distributor) 2.7.7
+- [MW CS2 Window Distributor](https://github.com/Macwelshman/MW_CS2_Window_Distributor) 2.7.8
 
 Package metadata, compatibility, and licensing are declared in each extension's
 `blender_manifest.toml`.

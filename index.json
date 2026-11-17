@@ -7,16 +7,16 @@
       "id": "mw_cs2_window_distributor",
       "name": "MW CS2 Window Distributor",
       "tagline": "Distribute window UV islands across the CS2 window atlas",
-      "version": "2.7.7",
+      "version": "2.7.8",
       "type": "add-on",
       "maintainer": "MacWelshman",
       "license": [
         "SPDX:GPL-3.0-or-later"
       ],
       "blender_version_min": "5.2.0",
-      "archive_url": "./mw_cs2_window_distributor-2.7.7.zip",
-      "archive_size": 14896,
-      "archive_hash": "sha256:71ba7716c5400fd8d644940bbf10f2683ca1688bd01069410db4c95b28890a24"
+      "archive_url": "./mw_cs2_window_distributor-2.7.8.zip",
+      "archive_size": 16145,
+      "archive_hash": "sha256:4c927c5d7ee7caa9a8fa67b902a57a2c0d77a0258398ff03feb158f3c132da69"
     },
     {
       "schema_version": "1.0.0",

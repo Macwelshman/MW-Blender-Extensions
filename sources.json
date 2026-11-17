@@ -14,8 +14,8 @@
   "mw_cs2_window_distributor": {
     "repo": "Macwelshman/MW_CS2_Window_Distributor",
     "asset": "mw_cs2_window_distributor-{version}.zip",
-    "version": "2.7.7",
-    "sha256": "71ba7716c5400fd8d644940bbf10f2683ca1688bd01069410db4c95b28890a24"
+    "version": "2.7.8",
+    "sha256": "4c927c5d7ee7caa9a8fa67b902a57a2c0d77a0258398ff03feb158f3c132da69"
   },
   "mw_pbr_material": {
     "repo": "Macwelshman/MW-PBR-Material",
