@@ -8,8 +8,8 @@
   "mw_cs2_pbr_material": {
     "repo": "Macwelshman/MW-CS2-PBR-Material",
     "asset": "mw_cs2_pbr_material-{version}.zip",
-    "version": "2.6.15",
-    "sha256": "e32c44cbbc7b5b3d4e24cfcd052cac980e79798e802220c9b8ab5994764d7174"
+    "version": "2.6.16",
+    "sha256": "d808b6a2efc51a4932ae2e417191a9936dc891e15084464425f92249c6910b69"
   },
   "mw_cs2_window_distributor": {
     "repo": "Macwelshman/MW_CS2_Window_Distributor",

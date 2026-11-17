@@ -58,7 +58,7 @@
       "id": "mw_cs2_pbr_material",
       "name": "MW CS2 PBR Material",
       "tagline": "Create clean, material-specific CS2 authoring shaders",
-      "version": "2.6.15",
+      "version": "2.6.16",
       "type": "add-on",
       "maintainer": "Macwelshman",
       "license": [
@@ -75,9 +75,9 @@
         "PBR",
         "Cities Skylines"
       ],
-      "archive_url": "./mw_cs2_pbr_material-2.6.15.zip",
-      "archive_size": 32757,
-      "archive_hash": "sha256:e32c44cbbc7b5b3d4e24cfcd052cac980e79798e802220c9b8ab5994764d7174"
+      "archive_url": "./mw_cs2_pbr_material-2.6.16.zip",
+      "archive_size": 34317,
+      "archive_hash": "sha256:d808b6a2efc51a4932ae2e417191a9936dc891e15084464425f92249c6910b69"
     }
   ]
 }
