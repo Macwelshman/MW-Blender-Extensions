@@ -20,7 +20,7 @@
   "mw_pbr_material": {
     "repo": "Macwelshman/MW-PBR-Material",
     "asset": "MW_PBR_Material_v{version}.zip",
-    "version": "0.6.5",
-    "sha256": "1984711741063ba4953a2b138f4a4845d874d496d876119efeca9f48f10b063f"
+    "version": "0.6.6",
+    "sha256": "343ae90ff1ad7d03d89e74e30ba1e7bf1c149e17b62e8fbc284826bec623b3fa"
   }
 }

@@ -34,7 +34,7 @@ In Blender 5.2:
 
 ## Published extensions
 
-- [MW PBR Material](https://github.com/Macwelshman/MW-PBR-Material) 0.6.5
+- [MW PBR Material](https://github.com/Macwelshman/MW-PBR-Material) 0.6.6
 - [MW CS2 PBR Material](https://github.com/Macwelshman/MW-CS2-PBR-Material) 2.6.16
 - [MW CS2 Batch Exporter](https://github.com/Macwelshman/MW-CS2-Batch-Exporter) 0.1.27
 - [MW CS2 Window Distributor](https://github.com/Macwelshman/MW_CS2_Window_Distributor) 2.7.7
